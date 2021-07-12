@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://zackthehuman/./src/pages/404.js"],"names":[],"mappings":"sIAMA,UAJA,WACE,OAAO","file":"component---src-pages-404-js-be67b2eb60e4e7484e2b.js","sourcesContent":["import React from 'react';\n\nfunction PageNotFound() {\n  return <div> oops, aint no page named that. </div>;\n}\n\nexport default PageNotFound;\n"],"sourceRoot":""}

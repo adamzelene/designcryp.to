@@ -1,0 +1,5 @@
+Todo:
+- Different background gradient images
+- Different font?
+- Remove all references to zl
+- Name-independent portfolio section
