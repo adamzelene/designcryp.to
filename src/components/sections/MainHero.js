@@ -7,23 +7,37 @@ import orbs from '/src/images/Orbs.png'
 
 import rainbowHero from '/src/images/MainHeroBG.svg'
 
-export const MainHero = () => {
+export const MainHero = (props) => {
   return (
-    <SectionWrapper>
+    <ContentWrapper>
       <TextWrapper>
-        <Header>Zack Lambert</Header>
-        <Subheader>is a designer</Subheader>
+        <Header>{props.header}</Header>
+        <Subheader>{props.subheader}</Subheader>
       </TextWrapper>
       <OrbWrapper>
         <Orbs src={orbs} />
       </OrbWrapper>
-    </SectionWrapper>
+    </ContentWrapper>
   )
 }
 
-const SectionWrapper = styled.header`
+const ContentWrapper = styled.div`
+  display: grid;
+  grid-template-columns: calc(16px + 2vw) auto calc(16px + 2vw);
+  grid-template-rows: calc(16px + 2vw) auto auto calc(16px + 2vw);
   height: 100vh;
   width: 100vw;
+  max-width: 1080px;
+
+  grid-column: 2 / 3;
+
+  border-radius: 48px;
+
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 70px rgba(0, 0, 0, 1);
+`
+
+const SectionWrapper = styled.header`
   display: grid;
   grid-template-columns: 3vw auto auto 3vw;
   grid-template-rows: 100vh;

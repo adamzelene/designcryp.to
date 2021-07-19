@@ -14,20 +14,14 @@ import { Metadata } from '../components/quarks'
 import pic from '/src/images/0to1.png'
 
 const Home = () => {
-  const test = ''
   return (
     <>
       <Metadata />
       <GlobalStyle />
 
       <HomePageWrapper>
-        <Services />
         <MainHero header="Adam Zelene" subheader="crypto designer" />
-        <Rainbow
-          graphic
-          img={pic}
-          text="I help create simple crypto apps."
-        />
+        <Rainbow graphic img={pic} text="I help create simple crypto apps." />
         <CenteredList
           header="Former Clients"
           listItemsArray={[
@@ -40,22 +34,12 @@ const Home = () => {
 
         <CenteredList
           linkList
-          header="Find Me"
+          header="Follow Me"
           listLinks={[
             {
               id: 1,
-              linkName: 'Linkedin',
-              url: 'https://www.linkedin.com/in/zacklambert/',
-            },
-            {
-              id: 2,
               linkName: 'Twitter',
-              url: 'https://twitter.com/zacklambert_',
-            },
-            {
-              id: 3,
-              linkName: 'Instagram',
-              url: 'https://www.instagram.com/zacklambert_/',
+              url: 'https://twitter.com/adamzelene',
             },
           ]}
         />
