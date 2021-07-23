@@ -1,50 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { h1 } from '../styles'
-
-import orbs from '/src/images/Orbs.png'
+import { h1, h2 } from '../styles'
 
 import rainbowHero from '/src/images/MainHeroBG.svg'
 
 export const MainHero = (props) => {
   return (
-    <ContentWrapper>
+    <SectionWrapper>
       <TextWrapper>
         <Header>{props.header}</Header>
         <Subheader>{props.subheader}</Subheader>
       </TextWrapper>
-      <OrbWrapper>
-        <Orbs src={orbs} />
-      </OrbWrapper>
-    </ContentWrapper>
+    </SectionWrapper>
   )
 }
-
-const ContentWrapper = styled.div`
-  display: grid;
-  grid-template-columns: calc(16px + 2vw) auto calc(16px + 2vw);
-  grid-template-rows: calc(16px + 2vw) auto auto calc(16px + 2vw);
-  height: 100vh;
-  width: 100vw;
-  max-width: 1080px;
-
-  grid-column: 2 / 3;
-
-  border-radius: 48px;
-
-  background: rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 10px 70px rgba(0, 0, 0, 1);
-`
 
 const SectionWrapper = styled.header`
   display: grid;
   grid-template-columns: 3vw auto auto 3vw;
   grid-template-rows: 100vh;
 
-  /* background-image: url(${rainbowHero}); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
+  background-image: url(${rainbowHero});
+  background-repeat: no-repeat;
+  background-size: cover;
 
   justify-items: center;
   align-items: center;
@@ -74,7 +53,7 @@ const Orbs = styled.div`
   width: calc(123px + 4vw); */
   height: 640px;
   width: 123px;
-  background-image: url(${orbs});
+  /* background-image: url(${orbs}); */
   background-repeat: no-repeat;
   background-size: cover;
 `
@@ -99,7 +78,7 @@ const Header = styled(h1)`
   }
 `
 
-const Subheader = styled(h1)`
+const Subheader = styled(h2)`
   color: #888888;
   margin-top: 8px;
 `

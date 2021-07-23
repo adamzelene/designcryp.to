@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import rainbow from '/src/images/coolGradRight.svg'
 
-import { h1, h3, p, cardDefault } from '../styles'
+import { h1, h4, p, cardDefault } from '../styles'
 
 export const Services = () => {
   return (
@@ -15,16 +15,30 @@ export const Services = () => {
             <CardItem>
               <CardListItemTitle>Design</CardListItemTitle>
               <CardListItemBody>
-                Idea to implementation. I help teams create simple software
-                through empathetic, rapid prototyping. I believe we are all
-                designers.
+                Idea to implementation; I help teams design simple crypto apps.
+                I have experience working with bank analytics dashboards,
+                lending applications, &amp; inclusively designed applications
+                for all ages. I'm good at taking complicated things and working
+                with myself or a team to distill it into its fundamentals.
               </CardListItemBody>
 
               <CardListItemTitle>Product</CardListItemTitle>
               <CardListItemBody>
-                Idea to implementation. I help teams create simple software
-                through empathetic, rapid prototyping. I believe we are all
-                designers.
+                Product strategies aren't one-size-fits-all. Many factors play a
+                role in helping teams acheive desired outcomes but one constant
+                is focus on the human using the product. Without empathy,
+                products fail to serve users; without frequent feedback loops,
+                products become rooted in assumption. I believe good product
+                teams dance on the line between intuition and rational decision
+                making.
+              </CardListItemBody>
+
+              <CardListItemTitle>Front End Dev</CardListItemTitle>
+              <CardListItemBody>
+                Proficient with HTML, CSS, and putting that HTML / CSS into
+                React. Getting better at JS all the time, but still pretty
+                junior. For me, Front End Dev is another tool in the designer's
+                toolbox to test assumptions quickly.
               </CardListItemBody>
             </CardItem>
           </ServicesCard>
@@ -37,7 +51,7 @@ export const Services = () => {
 
 const RainbowSection = styled.section`
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 
   padding: 10vh 0;
 
@@ -48,7 +62,6 @@ const RainbowSection = styled.section`
   background-image: url(${rainbow});
   background-repeat: no-repeat;
   background-size: cover;
-
   grid-template-columns: 5vw 45vw 45vw 5vw;
 
   @media (max-width: 960px) {
@@ -57,14 +70,27 @@ const RainbowSection = styled.section`
   } ;
 `
 
+// const ContentWrapper = styled.div`
+//   grid-column: 2 /4;
+
+//   display: grid;
+//   align-items: center;
+//   justify-content: center;
+
+//   grid-template-columns: 1fr 1fr;
+
+//   @media (max-width: 960px) {
+//     grid-column: 2;
+//     grid-template-columns: 5vw 1fr 5vw;
+//   } ;
+// `
 const ContentWrapper = styled.div`
   grid-column: 2 /4;
 
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
-
-  grid-template-columns: 1fr 1fr;
+  flex-flow: column;
 
   @media (max-width: 960px) {
     grid-column: 2;
@@ -80,7 +106,7 @@ const ServicesCard = styled(cardDefault)`
   grid-template-columns: 3vw 1fr 3vw;
 
   grid-column: 2;
-
+  background: rgba(0, 0, 0, 0.7);
   @media (max-width: 960px) {
     grid-column: 2;
   }
@@ -92,7 +118,7 @@ const CardItem = styled.div`
   grid-column: 2;
 `
 
-const CardListItemTitle = styled(h3)`
+const CardListItemTitle = styled(h4)`
   line-height: 0;
 `
 const CardListItemBody = styled(p)``

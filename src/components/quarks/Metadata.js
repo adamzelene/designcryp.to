@@ -6,20 +6,35 @@ import share from '/src/static/share.png'
 export const Metadata = () => {
   return (
     <Helmet>
-      <title>Zack is a Designer</title>
-      <meta name="title" content="Zack Lambert is a Designer" />
-      <meta name="description" content="⊙" />
+      <title>Adam Zelene</title>
+      <meta name="title" content="Adam Zelene | Crypto Product Designer" />
+      <meta
+        name="description"
+        content="Adam helps design simple crypto apps for people, DAOs, and people that are DAOs."
+      />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://zacklambert.com/" />
-      <meta property="og:title" content="Zack is a Designer" />
-      <meta property="og:description" content="⊙" />
+      <meta property="og:url" content="https://designcryp.to/" />
+      <meta
+        property="og:title"
+        content="Adam Zelene | Crypto Product Designer"
+      />
+      <meta
+        property="og:description"
+        content="Adam helps design simple crypto apps for people, DAOs, and people that are DAOs."
+      />
       <meta property="og:image" content={share} />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://twitter.com/zacklambert_" />
-      <meta property="twitter:title" content="Zack is a Designer" />
-      <meta property="twitter:description" content="⊙" />
+      <meta property="twitter:url" content="https://twitter.com/adamzelene" />
+      <meta
+        property="twitter:title"
+        content="Adam helps design simple crypto apps for people, DAOs, and people that are DAOs."
+      />
+      <meta
+        property="twitter:description"
+        content="Adam helps design simple crypto apps for people, DAOs, and people that are DAOs."
+      />
       <meta property="twitter:image" content={share}></meta>
 
       <link rel="preconnect" href="https://fonts.gstatic.com" />

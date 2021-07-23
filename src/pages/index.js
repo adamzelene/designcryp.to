@@ -20,8 +20,7 @@ const Home = () => {
       <GlobalStyle />
 
       <HomePageWrapper>
-        <MainHero header="Adam Zelene" subheader="crypto designer" />
-        <Rainbow graphic img={pic} text="I help create simple crypto apps." />
+        <MainHero header="Adam Zelene" subheader="crypto product designer" />
         <CenteredList
           header="Former Clients"
           listItemsArray={[
@@ -30,7 +29,9 @@ const Home = () => {
             'Eldertech Startup',
           ]}
         />
-        <Rainbow status header="Currently" text="Available for Work" />
+        <Rainbow graphic img={pic} text="I help create simple crypto apps." />
+        <Services />
+        <Rainbow status header="Currently" text="Available for Hire" />
 
         <CenteredList
           linkList
@@ -41,9 +42,14 @@ const Home = () => {
               linkName: 'Twitter',
               url: 'https://twitter.com/adamzelene',
             },
+            {
+              id: 2,
+              linkName: 'adamzelene.eth',
+              url:
+                'https://etherscan.io/address/0xd56fb4d8b7c235af2a40f2fafab3f5888ad86726',
+            },
           ]}
         />
-        <Footer />
       </HomePageWrapper>
     </>
   )
@@ -52,9 +58,11 @@ const Home = () => {
 export default Home
 
 const HomePageWrapper = styled.div`
-  display: grid;
-  grid-template-rows: repeat(6, auto);
-  overflow: hidden;
+  /* display: grid; */
+  /* grid-template-rows: repeat(7, auto); */
+  /* overflow: hidden; */
+
+  /* display: flex; */
   @media (max-width: 768px) {
     row-gap: 1em;
   }
