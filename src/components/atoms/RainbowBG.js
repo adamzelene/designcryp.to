@@ -11,7 +11,7 @@ export const RainbowBg = (props) => {
 
 const RainbowSection = styled.section`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   flex-flow: column;
   align-items: center;

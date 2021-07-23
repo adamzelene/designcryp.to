@@ -6,7 +6,7 @@ import share from '/src/static/share.png'
 export const Metadata = () => {
   return (
     <Helmet>
-      <title>Adam Zelene</title>
+      <title>Adam Zelene | Crypto Designer</title>
       <meta name="title" content="Adam Zelene | Crypto Product Designer" />
       <meta
         name="description"

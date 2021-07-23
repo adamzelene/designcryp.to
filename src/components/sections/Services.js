@@ -11,28 +11,27 @@ export const Services = () => {
       <RainbowSection>
         <ContentWrapper>
           <Title> How I Can Help</Title>
-          <ServicesCard>
-            <CardItem>
+          <CardWrapper>
+            <ServicesCard>
               <CardListItemTitle>Design</CardListItemTitle>
               <CardListItemBody>
                 Idea to implementation; I help teams design simple crypto apps.
-                I have experience working with bank analytics dashboards,
-                lending applications, &amp; inclusively designed applications
-                for all ages. I'm good at taking complicated things and working
-                with myself or a team to distill it into its fundamentals.
+                I've designed web &amp; mobile experiences for large companies
+                &amp; startups.
               </CardListItemBody>
+            </ServicesCard>
 
+            <ServicesCard>
               <CardListItemTitle>Product</CardListItemTitle>
               <CardListItemBody>
-                Product strategies aren't one-size-fits-all. Many factors play a
-                role in helping teams acheive desired outcomes but one constant
-                is focus on the human using the product. Without empathy,
-                products fail to serve users; without frequent feedback loops,
-                products become rooted in assumption. I believe good product
-                teams dance on the line between intuition and rational decision
-                making.
+                I believe great product teams dance on a thin line between
+                intuition and data-driven decisions. My product philosophy
+                values fluidly coordination between engineering, business, &amp;
+                design to create human-centered products.
               </CardListItemBody>
+            </ServicesCard>
 
+            <ServicesCard>
               <CardListItemTitle>Front End Dev</CardListItemTitle>
               <CardListItemBody>
                 Proficient with HTML, CSS, and putting that HTML / CSS into
@@ -40,8 +39,8 @@ export const Services = () => {
                 junior. For me, Front End Dev is another tool in the designer's
                 toolbox to test assumptions quickly.
               </CardListItemBody>
-            </CardItem>
-          </ServicesCard>
+            </ServicesCard>
+          </CardWrapper>
         </ContentWrapper>
       </RainbowSection>
     </>
@@ -51,9 +50,9 @@ export const Services = () => {
 
 const RainbowSection = styled.section`
   width: 100vw;
-  /* height: 100vh; */
+  /* height: 200vh; */
 
-  padding: 10vh 0;
+  padding: 6vh 0;
 
   display: grid;
   align-items: center;
@@ -62,7 +61,7 @@ const RainbowSection = styled.section`
   background-image: url(${rainbow});
   background-repeat: no-repeat;
   background-size: cover;
-  grid-template-columns: 5vw 45vw 45vw 5vw;
+  /* grid-template-columns: 5vw 45vw 45vw 5vw; */
 
   @media (max-width: 960px) {
     grid-template-columns: 5vw 1fr 5vw;
@@ -70,23 +69,7 @@ const RainbowSection = styled.section`
   } ;
 `
 
-// const ContentWrapper = styled.div`
-//   grid-column: 2 /4;
-
-//   display: grid;
-//   align-items: center;
-//   justify-content: center;
-
-//   grid-template-columns: 1fr 1fr;
-
-//   @media (max-width: 960px) {
-//     grid-column: 2;
-//     grid-template-columns: 5vw 1fr 5vw;
-//   } ;
-// `
 const ContentWrapper = styled.div`
-  grid-column: 2 /4;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,32 +77,37 @@ const ContentWrapper = styled.div`
 
   @media (max-width: 960px) {
     grid-column: 2;
-    grid-template-columns: 5vw 1fr 5vw;
+    /* grid-template-columns: 5vw 1fr 5vw; */
   } ;
 `
 
-const ServicesCard = styled(cardDefault)`
-  height: auto;
-  max-width: 600px;
+const CardWrapper = styled.div`
+  /* width: 100%; */
 
-  display: grid;
-  grid-template-columns: 3vw 1fr 3vw;
-
-  grid-column: 2;
-  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   @media (max-width: 960px) {
-    grid-column: 2;
+    flex-flow: column;
+    justify-content: space-between;
+    /* height: calc(100% + 10vh); */
   }
 `
 
-const CardItem = styled.div`
-  width: 100%;
-  height: auto;
-  grid-column: 2;
+const ServicesCard = styled(cardDefault)`
+  padding: calc(16px + 2vw);
+  max-width: 23%;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  @media (max-width: 960px) {
+    max-width: 90vw;
+    margin-top: 5vh;
+  }
 `
 
 const CardListItemTitle = styled(h4)`
-  line-height: 0;
+  /* line-height: 0; */
 `
 const CardListItemBody = styled(p)``
 

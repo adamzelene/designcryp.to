@@ -35,10 +35,10 @@ export const h3 = styled.h3`
 `
 export const h4 = styled.h4`
   font-family: 'Barlow', Helvetica, sans-serif;
-  font-size: calc(20px + 2vw);
+  font-size: calc(16px + 2vw);
   font-style: normal;
   font-weight: 600;
-  line-height: calc(24px + 2vw);
+  /* line-height: calc(24px + 2vw); */
   letter-spacing: calc(-1px - 0.04vw);
   text-align: left;
   color: ${colors.text};

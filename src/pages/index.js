@@ -22,7 +22,7 @@ const Home = () => {
       <HomePageWrapper>
         <MainHero header="Adam Zelene" subheader="crypto product designer" />
         <CenteredList
-          header="Former Clients"
+          header="Experience"
           listItemsArray={[
             'Fortune 50 Banks',
             'Fintech Startups',
@@ -58,11 +58,10 @@ const Home = () => {
 export default Home
 
 const HomePageWrapper = styled.div`
-  /* display: grid; */
-  /* grid-template-rows: repeat(7, auto); */
-  /* overflow: hidden; */
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+  overflow: hidden;
 
-  /* display: flex; */
   @media (max-width: 768px) {
     row-gap: 1em;
   }
