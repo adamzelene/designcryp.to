@@ -22,7 +22,6 @@ const Home = () => {
       <HomePageWrapper>
         <MainHero header="Adam Zelene" subheader="crypto product designer" />
         <WhoIsAdam />
-        <Rainbow graphic img={pic} text="I help create simple crypto apps." />
         <CenteredList
           header="Experience"
           listItemsArray={[
@@ -31,7 +30,8 @@ const Home = () => {
             'Eldertech Startup',
           ]}
         />
-        <Services />
+        <Rainbow graphic img={pic} text="I help create simple crypto apps." />
+        {/* <Services /> */}
         <CenteredList
           header="Skills"
           listItemsArray={[
@@ -74,9 +74,9 @@ const Home = () => {
 export default Home
 
 const HomePageWrapper = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-rows: repeat(7, auto);
-  overflow: hidden;
+  overflow: hidden; */
 
   @media (max-width: 768px) {
     row-gap: 1em;

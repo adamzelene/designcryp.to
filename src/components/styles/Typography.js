@@ -38,7 +38,7 @@ export const h4 = styled.h4`
   font-size: calc(16px + 2vw);
   font-style: normal;
   font-weight: 600;
-  /* line-height: calc(24px + 2vw); */
+  line-height: calc(24px + 2vw);
   letter-spacing: calc(-1px - 0.04vw);
   text-align: left;
   color: ${colors.text};
@@ -69,13 +69,18 @@ export const p = styled.p`
 `
 export const BodyMedium = styled.p`
   font-family: 'Barlow', Helvetica, sans-serif;
-  font-size: calc(10px + 1vw);
+  font-size: calc(14px + 1vw);
   font-style: normal;
   font-weight: 300;
-  line-height: calc(16px + 1vw);
+  line-height: calc(22px + 1vw);
   letter-spacing: -0.03em;
   text-align: left;
   color: ${colors.text};
+
+  @media (max-width: 960px) {
+    font-size: calc(20px + 1vw);
+    line-height: calc(32px + 1vw);
+  } ;
 `
 
 export const a = styled.a`

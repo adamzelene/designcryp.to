@@ -11,36 +11,46 @@ export const Services = () => {
       <RainbowSection>
         <ContentWrapper>
           <Title> How I Can Help</Title>
-          <CardWrapper>
+          <CardStructure>
             <ServicesCard>
-              <CardListItemTitle>Design</CardListItemTitle>
-              <CardListItemBody>
-                Idea to implementation; I help teams design simple crypto apps.
-                I've designed web &amp; mobile experiences for large companies
-                &amp; startups.
-              </CardListItemBody>
-            </ServicesCard>
+              <Item>
+                <CardListItemIcon />
+                <TextContainer>
+                  <CardListItemTitle>Design</CardListItemTitle>
+                  <CardListItemBody>
+                    Idea to implementation; I help teams design simple crypto
+                    apps. I've designed web &amp; mobile experiences for large
+                    companies &amp; startups.
+                  </CardListItemBody>
+                </TextContainer>
+              </Item>
 
-            <ServicesCard>
-              <CardListItemTitle>Product</CardListItemTitle>
-              <CardListItemBody>
-                I believe great product teams dance on a thin line between
-                intuition and data-driven decisions. My product philosophy
-                values fluidly coordination between engineering, business, &amp;
-                design to create human-centered products.
-              </CardListItemBody>
+              <Item>
+                <CardListItemIcon />
+                <TextContainer>
+                  <CardListItemTitle>Product</CardListItemTitle>
+                  <CardListItemBody>
+                    I believe great product teams dance on a thin line between
+                    intuition and data-driven decisions. My product philosophy
+                    values fluidly coordination between engineering, business,
+                    &amp; design to create human-centered products.
+                  </CardListItemBody>
+                </TextContainer>
+              </Item>
+              <Item>
+                <CardListItemIcon />
+                <TextContainer>
+                  <CardListItemTitle>Front End Dev</CardListItemTitle>
+                  <CardListItemBody>
+                    Proficient with HTML, CSS, and putting that HTML / CSS into
+                    React. Getting better at JS all the time, but still pretty
+                    junior. For me, Front End Dev is another tool in the
+                    designer's toolbox to test assumptions quickly.
+                  </CardListItemBody>
+                </TextContainer>
+              </Item>
             </ServicesCard>
-
-            <ServicesCard>
-              <CardListItemTitle>Front End Dev</CardListItemTitle>
-              <CardListItemBody>
-                Proficient with HTML, CSS, and putting that HTML / CSS into
-                React. Getting better at JS all the time, but still pretty
-                junior. For me, Front End Dev is another tool in the designer's
-                toolbox to test assumptions quickly.
-              </CardListItemBody>
-            </ServicesCard>
-          </CardWrapper>
+          </CardStructure>
         </ContentWrapper>
       </RainbowSection>
     </>
@@ -50,7 +60,6 @@ export const Services = () => {
 
 const RainbowSection = styled.section`
   width: 100vw;
-  /* height: 200vh; */
 
   padding: 6vh 0;
 
@@ -81,35 +90,62 @@ const ContentWrapper = styled.div`
   } ;
 `
 
-const CardWrapper = styled.div`
+const CardStructure = styled.div`
   /* width: 100%; */
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+
   @media (max-width: 960px) {
     flex-flow: column;
     justify-content: space-between;
     /* height: calc(100% + 10vh); */
   }
 `
-
 const ServicesCard = styled(cardDefault)`
   padding: calc(16px + 2vw);
-  max-width: 23%;
+  max-width: 50vw;
 
   background: rgba(0, 0, 0, 0.7);
 
   @media (max-width: 960px) {
-    max-width: 90vw;
+    max-width: 95vw;
     margin-top: 5vh;
   }
 `
 
+const Item = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`
+
+const CardListItemIcon = styled.img`
+  width: 32px;
+  height: 32px;
+  /* width: calc(24px + 2vw); */
+`
+
+const TextContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  margin-left: 16px;
+`
+
 const CardListItemTitle = styled(h4)`
   /* line-height: 0; */
+  margin-bottom: 8px;
+  margin: 0;
 `
-const CardListItemBody = styled(p)``
+const CardListItemBody = styled(p)`
+  margin: 0;
+`
 
 //   Type
 
