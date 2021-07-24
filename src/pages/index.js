@@ -6,7 +6,7 @@ import {
   Rainbow,
   Services,
   CenteredList,
-  Footer,
+  WhoIsAdam,
 } from '../components/sections'
 
 import { Metadata } from '../components/quarks'
@@ -21,6 +21,8 @@ const Home = () => {
 
       <HomePageWrapper>
         <MainHero header="Adam Zelene" subheader="crypto product designer" />
+        <WhoIsAdam />
+        <Rainbow graphic img={pic} text="I help create simple crypto apps." />
         <CenteredList
           header="Experience"
           listItemsArray={[
@@ -29,8 +31,22 @@ const Home = () => {
             'Eldertech Startup',
           ]}
         />
-        <Rainbow graphic img={pic} text="I help create simple crypto apps." />
         <Services />
+        <CenteredList
+          header="Skills"
+          listItemsArray={[
+            'UX Design',
+            'UI Design',
+            'Web App Design',
+            'Mobile App Design',
+            'App Redesigns',
+            'Rapid Prototyping',
+            'Design Systems',
+            'User Research',
+            'Usability Testing',
+            'HTML / CSS',
+          ]}
+        />
         <Rainbow status header="Currently" text="Available for Hire" />
 
         <CenteredList

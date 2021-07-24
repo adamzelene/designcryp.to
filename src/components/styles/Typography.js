@@ -67,6 +67,16 @@ export const p = styled.p`
   text-align: left;
   color: ${colors.text};
 `
+export const BodyMedium = styled.p`
+  font-family: 'Barlow', Helvetica, sans-serif;
+  font-size: calc(10px + 1vw);
+  font-style: normal;
+  font-weight: 300;
+  line-height: calc(16px + 1vw);
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: ${colors.text};
+`
 
 export const a = styled.a`
   text-decoration: underline ${colors.text};
