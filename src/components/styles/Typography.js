@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { colors } from './Colors'
 
 export const h1 = styled.h1`
-  font-family: 'Barlow', Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: calc(42px + 3vw);
   font-weight: 600;
   line-height: calc(48px + 2vw);
@@ -13,7 +13,7 @@ export const h1 = styled.h1`
 `
 
 export const h2 = styled.h2`
-  font-family: 'Barlow', Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: calc(24px + 2vw);
   font-style: normal;
   font-weight: 600;
@@ -24,7 +24,7 @@ export const h2 = styled.h2`
 `
 
 export const h3 = styled.h3`
-  font-family: 'Barlow', Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: calc(18px + 2vw);
   font-style: normal;
   font-weight: 600;
@@ -34,7 +34,7 @@ export const h3 = styled.h3`
   color: ${colors.text};
 `
 export const h4 = styled.h4`
-  font-family: 'Barlow', Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: calc(16px + 2vw);
   font-style: normal;
   font-weight: 600;
@@ -45,7 +45,7 @@ export const h4 = styled.h4`
 `
 
 export const h5 = styled.h5`
-  font-family: 'Barlow', Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   /* font-size: 32px; */
   font-size: calc(12px + 2vw);
   font-style: normal;
@@ -58,7 +58,7 @@ export const h5 = styled.h5`
 `
 
 export const p = styled.p`
-  font-family: 'Barlow', Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-size: calc(10px + 1vw);
   font-style: normal;
   font-weight: 300;
