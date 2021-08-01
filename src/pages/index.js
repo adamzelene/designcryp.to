@@ -23,11 +23,11 @@ const Home = () => {
         <MainHero header="Adam Zelene" subheader="crypto product designer" />
         <WhoIsAdam />
         <CenteredList
-          header="Experience"
+          header="Work Experience"
           listItemsArray={[
             'Fortune 50 Banks',
             'Fintech Startups',
-            'Eldertech Startup',
+            'Inclusive Design Startup',
           ]}
         />
         <Rainbow graphic img={pic} text="I help create simple crypto apps." />
@@ -37,17 +37,17 @@ const Home = () => {
           listItemsArray={[
             'UX Design',
             'UI Design',
-            'Web App Design',
-            'Mobile App Design',
-            'App Redesigns',
-            'Rapid Prototyping',
+            'Web / Mobile',
             'Design Systems',
+            'Audits & Redesigns',
+            'Rapid Prototyping',
+
             'User Research',
             'Usability Testing',
             'HTML / CSS',
           ]}
         />
-        <Rainbow status header="Currently" text="Available for Hire" />
+        <Rainbow status header="Currently" text="Available for Work" />
 
         <CenteredList
           linkList

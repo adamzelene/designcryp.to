@@ -13,7 +13,7 @@ export const WhoIsAdam = () => {
         Hi I'm Adam
       </IntroHeader>
       <IntroBody>
-        I’m a digital product designer working in crypto. <br />
+        I’m a digital product designer working in the Ethereum ecosystem. <br />
         <br />I help people, DAOs, &amp; people that identify as DAOs design
         simple crypto apps.
       </IntroBody>
@@ -41,6 +41,10 @@ const IntroHeader = styled(h4)`
   text-align: center;
 `
 const IntroBody = styled(BodyMedium)`
-  max-width: 326px;
+  max-width: 600px;
   text-align: center;
+
+  @media (max-width: 960px) {
+    max-width: 80vw;
+  }
 `
