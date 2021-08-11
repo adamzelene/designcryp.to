@@ -12,7 +12,6 @@ export const Metadata = () => {
         name="description"
         content="Adam helps design simple crypto apps for people, DAOs, and people that are DAOs."
       />
-
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://designcryp.to/" />
       <meta
@@ -24,7 +23,6 @@ export const Metadata = () => {
         content="Adam helps design simple crypto apps for people, DAOs, and people that are DAOs."
       />
       <meta property="og:image" content={share} />
-
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://twitter.com/adamzelene" />
       <meta
@@ -42,7 +40,6 @@ export const Metadata = () => {
         href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap"
         rel="stylesheet"
       />
-
       <link
         rel="apple-touch-icon-precomposed"
         sizes="57x57"
