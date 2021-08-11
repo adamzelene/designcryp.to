@@ -30,7 +30,7 @@ const Home = () => {
             'Inclusive Design Startup',
           ]}
         />
-        <Rainbow graphic img={pic} text="I help create simple crypto apps." />
+        <Rainbow graphic img={pic} text="I can help make crypto apps simple." />
         {/* <Services /> */}
         <CenteredList
           header="Skills"
@@ -41,7 +41,6 @@ const Home = () => {
             'Design Systems',
             'Audits & Redesigns',
             'Rapid Prototyping',
-
             'User Research',
             'Usability Testing',
             'HTML / CSS',
@@ -51,7 +50,7 @@ const Home = () => {
 
         <CenteredList
           linkList
-          header="Follow Me"
+          header="Find Me"
           listLinks={[
             {
               id: 1,

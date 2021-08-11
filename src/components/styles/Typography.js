@@ -4,7 +4,7 @@ import { colors } from './Colors'
 
 export const h1 = styled.h1`
   font-family: 'Barlow', Helvetica, sans-serif;
-  font-size: calc(42px + 3vw);
+  font-size: calc(42px + 2vw);
   font-weight: 600;
   line-height: calc(48px + 2vw);
   letter-spacing: calc(-1px - 0.1vw);

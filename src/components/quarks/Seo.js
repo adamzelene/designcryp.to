@@ -25,7 +25,7 @@
 //   //   }
 
 //   const seo = {
-//     title: '⊙' || 'Zack Lambert is a Designer',
+//     title: '⊙' || 'Adam Zelene',
 //     description: '⊙' || 'Simple App Design',
 //     image: `${siteUrl}'/img/LivePreview.png'`,
 //   }

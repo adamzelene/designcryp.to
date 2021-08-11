@@ -39,14 +39,16 @@ export const Rainbow = (props) => {
 // Dark Content BG
 const ContentWrapper = styled.div`
   display: grid;
-  grid-template-columns: calc(16px + 2vw) auto calc(16px + 2vw);
-  grid-template-rows: calc(16px + 2vw) auto auto calc(16px + 2vw);
+  /* grid-template-columns: calc(16px + 2vw) auto calc(16px + 2vw); */
+  /* grid-template-rows: calc(16px + 2vw) auto auto calc(16px + 2vw); */
+  grid-template-columns: calc(24px) auto calc(24px);
+  grid-template-rows: calc(24px) auto auto calc(24px);
 
   max-width: 1080px;
 
   grid-column: 2 / 3;
 
-  border-radius: 48px;
+  border-radius: 42px;
 
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0px 10px 70px rgba(0, 0, 0, 1);
@@ -104,6 +106,10 @@ const StatusWrapper = styled.div`
 // Text
 const BigText = styled(h1)`
   text-align: center;
+
+  font-size: calc(32px + 2vw);
+  font-weight: 600;
+  line-height: calc(40px + 1vw);
 `
 
 // Blinking Status
